@@ -9,8 +9,6 @@ root = Tk()
 c = Canvas(root, width=canvas_width, height=canvas_height, background="sky blue")
 c.create_rectangle(-5, canvas_height-100, canvas_width+5, canvas_height+5, fill="light green", width=0)
 c.create_oval(-80, -80, 140, 120, fill='yellow', width=0)
-
-
 c.pack()
 
 color_cycle = cycle(["red", "white", "light pink", "light yellow", "black"])

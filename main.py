@@ -4,7 +4,6 @@ from tkinter import Canvas, Tk, messagebox, font
 
 canvas_width = 800
 canvas_height = 400
-
 root = Tk()
 c = Canvas(root, width=canvas_width, height=canvas_height, background="sky blue")
 c.create_rectangle(-5, canvas_height-100, canvas_width+5, canvas_height+5, fill="light green", width=0)
@@ -29,7 +28,6 @@ catcher_starty2 = catcher_starty + catcher_height
 catcher = c.create_arc(catcher_startx, catcher_starty, catcher_startx2, catcher_starty2, start=200, extent=140, style="arc", outline=catcher_color, width=7)
 game_font = font.nametofont("TkFixedFont")
 game_font.config(size=18)
-
 
 score = 0
 score_text = c.create_text(10, 10, anchor="nw", font=game_font, fill="black", text="Score: "+ str(score))
